@@ -1,5 +1,7 @@
 <?php
 
+namespace UniversalRating;
+
 class User
 {
     protected $userName = 'jdoe';
