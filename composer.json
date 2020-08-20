@@ -1,0 +1,16 @@
+{
+    "name": "bcheronn/universal-rating",
+    "description": "Prototype of a website that allows users to rate anything and everything",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Bertrand C",
+            "email": "66913901+bcheronn@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
