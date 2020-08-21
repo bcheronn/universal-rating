@@ -19,8 +19,8 @@ $user = new User;
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
-<body class="text-light bg-dark">
-    <div class="container">
+<body class="text-light bg-dark container">
+    <header>
         <nav class="navbar sticky-top navbar-expand navbar-dark">
             <a class="navbar-brand" href="#">Universal Rating</a>
             <div class="navbar-nav">
@@ -29,10 +29,10 @@ $user = new User;
                 <a class="nav-item nav-link" href="#">Rate Anything</a>
             </div>
         </nav>
-        <main>
-            Logged user: <?= $user->echoEmail() ?>
-        </main>
-    </div>
+    </header>
+    <main>
+        Logged user: <?= $user->echoEmail() ?>
+    </main>
 </body>
 
 </html>

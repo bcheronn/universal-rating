@@ -10,6 +10,6 @@ class User
 
     public function echoEmail()
     {
-        echo $this->email;
+        echo $this->email, PHP_EOL;
     }
 }
