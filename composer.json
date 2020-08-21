@@ -17,5 +17,10 @@
     "psr-4": {
       "UniversalRating\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "UniversalRating\\Tests\\": "tests/"
+    }
   }
 }
