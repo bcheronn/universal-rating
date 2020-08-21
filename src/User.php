@@ -6,10 +6,10 @@ namespace UniversalRating;
 
 class User
 {
-    protected $userName = 'jdoe';
+    private $email = 'john@doe.com';
 
-    public function echoUserName()
+    public function echoEmail()
     {
-        echo $this->userName;
+        echo $this->email;
     }
 }
