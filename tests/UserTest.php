@@ -16,4 +16,9 @@ final class UserTest extends TestCase
             new User
         );
     }
+
+    public function testUserHasAName(): void
+    {
+        $this->assertClassHasAttribute("userName", User::class, "Class user has no user name");
+    }
 }
