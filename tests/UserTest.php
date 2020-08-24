@@ -9,13 +9,11 @@ use PHPUnit\Framework\TestCase;
 
 final class UserTest extends TestCase
 {
-    public function testUserClass(): void
+    public function testClassUserExists(): void
     {
-        $user = new User;
-
         $this->assertInstanceOf(
             User::class,
-            $user
+            new User
         );
     }
 }
