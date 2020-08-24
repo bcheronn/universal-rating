@@ -7,6 +7,7 @@ namespace UniversalRating;
 class User
 {
     private $email = 'john@doe.com';
+    private $userName = "John Doe";
 
     public function echoEmail()
     {
