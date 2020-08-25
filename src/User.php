@@ -7,9 +7,15 @@ namespace UniversalRating;
 class User
 {
     private $email = 'john@doe.com';
-    private $userName = "John Doe";
+    private $userName;
 
-    public function echoEmail()
+    public function __construct($userName = "John Doe")
+    {
+        $this->userName = $userName;
+    }
+
+    // Echo user mail (used for autoload testing)
+    public function echoEmail(): void
     {
         echo $this->email, PHP_EOL;
     }
