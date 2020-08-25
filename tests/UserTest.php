@@ -29,6 +29,16 @@ final class UserTest extends TestCase
     {
         $this->assertClassHasAttribute("userName", User::class, "User class has no user name");
         $user = new User("James SMITH");
-        $this->assertIsString($user->getUserName(), "User name is not a string");
+        $userName = $user->getUserName();
+        $this->assertIsString($userName, "User name is not a string");
+        $this->assertNotEquals("James STRING", $userName, "User name is not equal to unexpected");
+        $this->assertEquals("James SMITH", $userName, "User name is not equal to expected");
+    }
+
+    public function testEmailIsValid(): void
+    {
+        $this->assertClassHasAttribute("email", User::class, "User class has no email");
+        $user = new User;
+        // $user->setEmail("james@smith.org");
     }
 }
