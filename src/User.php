@@ -19,4 +19,9 @@ class User
     {
         echo $this->email, PHP_EOL;
     }
+
+    public function getUserName(): string
+    {
+        return $this->userName;
+    }
 }
