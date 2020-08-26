@@ -39,6 +39,6 @@ final class UserTest extends TestCase
     {
         $this->assertClassHasAttribute("email", User::class, "User class has no email");
         $user = new User;
-        // $user->setEmail("james@smith.org");
+        $user->setEmail("james@smith.org");
     }
 }
