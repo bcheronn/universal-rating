@@ -10,4 +10,10 @@ class InitialCest
     public function tryToTest(AcceptanceTester $I)
     {
     }
+
+    public function frontpageWorks(AcceptanceTester $I)
+    {
+        $I->amOnPage('/');
+        $I->see('Universal');
+    }
 }
